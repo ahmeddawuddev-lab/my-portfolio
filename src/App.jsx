@@ -3,6 +3,18 @@ import "./App.css";
 const projects = [
   {
     number: "01",
+    title: "Netflix Clone",
+    category: "MOVIE DISCOVERY PLATFORM",
+    description:
+      "A Netflix-inspired streaming interface featuring movie discovery and a responsive browsing experience using the TMDB API.",
+    technologies: ["React", "JavaScript", "CSS", "TMDB API"],
+    visual: "netflix",
+    github: "https://github.com/ahmeddawuddev-lab/netflix-clone.git",
+    demo: "https://ahmeddawud-netflix.vercel.app/",
+  },
+
+  {
+    number: "02",
     title: "ChatGPT Clone",
     category: "AI-POWERED APPLICATION",
     description:
@@ -13,7 +25,7 @@ const projects = [
     demo: "https://chatgpt-clone-frontend-eight.vercel.app/",
   },
   {
-    number: "02",
+    number: "03",
     title: "Evangadi Forum",
     category: "FULL-STACK COMMUNITY PLATFORM",
     description:
