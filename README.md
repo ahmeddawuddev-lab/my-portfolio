@@ -1,16 +1,89 @@
-# React + Vite
+Ahmed Dawud – Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website showcasing my skills, projects, and experience as a Junior Full-Stack Developer.
 
-Currently, two official plugins are available:
+🌐 Live Website: [View My Portfolio](https://ahmed-portfolio-website.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ 📸 Portfolio Preview
 
-## React Compiler
+![Portfolio Screenshot](public/images/portfolio-screenshot.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ 🚀 About the Project
 
-## Expanding the ESLint configuration
+This is my personal developer portfolio, built to present my technical skills, showcase projects, and provide an easy way for recruiters and potential clients to contact me.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ 🛠️ Technologies Used
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Vite
+
+ ✨ Features
+
+- Responsive design for desktop, tablet, and mobile devices.
+- Hero section introducing me as a Junior Full-Stack Developer.
+- About section with my background.
+- Technical skills showcase.
+- Featured projects with GitHub repositories and live demos.
+- Contact section.
+- Downloadable CV.
+
+ 💻 Featured Projects
+
+ 1. ChatGPT Clone
+An AI-powered chatbot built with React, Node.js, Express.js, Gemini AI, and MySQL.
+
+- [GitHub Repository](https://github.com/ahmeddawuddev-lab/chatgpt-clone)
+- [Live Demo](https://chatgpt-clone-frontend-eight.vercel.app/)
+
+ 2. Netflix Clone
+A movie browsing application built with React and the TMDB API.
+
+- [GitHub Repository](https://github.com/ahmeddawuddev-lab/netflix-clone)
+- [Live Demo](https://ahmeddawud-netflix.vercel.app/)
+
+ 3. Evangadi Forum
+A collaborative full-stack discussion platform built with React, Node.js, Express.js, and MySQL.
+
+- [GitHub Repository](https://github.com/ahmeddawuddev-lab/Forum_Project_Collab)
+- [Live Demo](https://ahmed-evangadi-forum.netlify.app/)
+
+ ⚙️ Run Locally
+
+To run this project on your computer:
+
+1. Clone the repository**
+
+git clone https://github.com/ahmeddawuddev-lab/my-portfolio.git
+
+2. Navigate into the project folder**
+
+cd my-portfolio
+
+3. Install dependencies
+
+npm install
+
+4. Start the development server
+
+npm run dev
+
+Open the local URL shown in your terminal.
+
+ 📄 Download My CV
+
+You can download my CV directly from my portfolio:
+
+[Download Ahmed Dawud's CV](https://ahmed-portfolio-website.netlify.app/Ahmed-Dawud-CV.pdf)
+
+ 📬 Contact
+
+- GitHub: [ahmeddawuddev-lab](https://github.com/ahmeddawuddev-lab)
+- LinkedIn: [Ahmed Dawud](https://www.linkedin.com/in/ahmed-dawud-b6b542442/)
+- Portfolio: [ahmed-portfolio-website.netlify.app](https://ahmed-portfolio-website.netlify.app/)
+
+---
+
+⭐ Thank you for visiting my portfolio repository!
