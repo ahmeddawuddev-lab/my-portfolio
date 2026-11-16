@@ -8,7 +8,7 @@ const projects = [
     description:
       "A Netflix-inspired streaming interface featuring movie discovery and a responsive browsing experience using the TMDB API.",
     technologies: ["React", "JavaScript", "CSS", "TMDB API"],
-    visual: "netflix",
+    image: "/images/Netflixclone%20screenshoot.png",
     github: "https://github.com/ahmeddawuddev-lab/netflix-clone.git",
     demo: "https://ahmeddawud-netflix.vercel.app/",
   },
@@ -20,7 +20,7 @@ const projects = [
     description:
       "An AI chat application connecting a React frontend to a backend API, with Gemini integration and MySQL conversation storage.",
     technologies: ["React", "Node.js", "Express", "MySQL", "Gemini API"],
-    visual: "chatgpt",
+    image: "/images/chatgpt%20screen%20shoot.png",
     github: "https://github.com/ahmeddawuddev-lab/chatgpt-clone.git",
     demo: "https://chatgpt-clone-frontend-eight.vercel.app/",
   },
@@ -31,23 +31,29 @@ const projects = [
     description:
       "A collaborative question-and-answer platform with authentication, discussions, and AI-powered knowledge retrieval features.",
     technologies: ["React", "Node.js", "Express", "MySQL", "RAG"],
-    visual: "forum",
+    image: "/images/evangadi%20forum%20screen%20shot.png",
     github: "https://github.com/ahmeddawuddev-lab/Forum_Project_Collab.git",
     demo: "https://ahmed-evangadi-forum.netlify.app/",
   },
 ];
 
-const skills = [
-  "HTML5",
-  "CSS3",
-  "JavaScript",
-  "React",
-  "Node.js",
-  "Express.js",
-  "REST APIs",
-  "MySQL",
-  "Git & GitHub",
-  "Responsive Design",
+const skillGroups = [
+  {
+    category: "Frontend Development",
+    skills: ["HTML5", "CSS3", "JavaScript", "React", "TypeScript"],
+  },
+  {
+    category: "Backend Development",
+    skills: ["Node.js", "Express.js", "REST APIs"],
+  },
+  {
+    category: "Database",
+    skills: ["MySQL"],
+  },
+  {
+    category: "Tools & Practices",
+    skills: ["Git & GitHub", "Responsive Design"],
+  },
 ];
 
 function Navbar() {
@@ -79,19 +85,15 @@ function Hero() {
         </div>
 
         <p className="eyebrow">HELLO, I'M AHMED DAWUD</p>
-
         <h1>
-          Turning ideas
+          Junior Full-Stack
           <br />
-          into <span className="gradient-text">digital</span>
-          <br />
-          experiences.
+          <span className="gradient-text">Developer.</span>
         </h1>
-
         <p className="hero-description">
-          I'm an Electrical and Computer Engineering graduate passionate about
-          building useful, modern web applications and solving real-world
-          problems with code.
+          I build modern web applications using React, JavaScript, Node.js,
+          Express.js, and MySQL. My projects include an AI-powered chat
+          application, a community platform, and a movie discovery application.
         </p>
 
         <div className="hero-actions">
@@ -133,7 +135,8 @@ function Hero() {
               name: <span className="code-green">'Ahmed Dawud'</span>,
             </p>
             <p className="code-indent">
-              role: <span className="code-green">'Full-Stack Developer'</span>,
+              role:{" "}
+              <span className="code-green">'Junior Full-Stack Developer'</span>,
             </p>
             <p className="code-indent">
               passion:{" "}
@@ -200,10 +203,12 @@ function About() {
         <div className="about-copy">
           <p className="large-copy">
             I'm an Electrical and Computer Engineering graduate from the
-            University of Gondar, Ethiopia. I'm building my skills as a
-            Full-Stack Developer by creating web applications with React,
-            Node.js, Express, and MySQL. I enjoy solving problems, learning new
-            technologies, and turning ideas into practical solutions.
+            University of Gondar, Ethiopia, with a passion for software
+            development. I completed full-stack development training and have
+            applied my knowledge by building practical web applications using
+            React, Node.js, Express.js, and MySQL. My engineering background
+            strengthened my logical thinking and problem-solving skills, which I
+            bring to every project I work on.
           </p>
 
           <a className="text-link" href="#projects">
@@ -258,14 +263,22 @@ function Skills() {
         hands-on projects.
       </p>
 
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div className="skill-card" key={skill}>
-            <span className="skill-number">
-              {String(index + 1).padStart(2, "0")}
-            </span>
-            <span>{skill}</span>
-            <span className="skill-arrow">↗</span>
+      <div className="skill-groups">
+        {skillGroups.map((group) => (
+          <div className="skill-group" key={group.category}>
+            <h3>{group.category}</h3>
+
+            <div className="skills-grid">
+              {group.skills.map((skill, index) => (
+                <div className="skill-card" key={skill}>
+                  <span className="skill-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span>{skill}</span>
+                  <span className="skill-arrow">↗</span>
+                </div>
+              ))}
+            </div>
           </div>
         ))}
       </div>
@@ -276,52 +289,17 @@ function Skills() {
 function ProjectCard({ project }) {
   return (
     <article className="project-card">
-      <div className={`project-visual ${project.visual}`}>
+      <div className="project-visual">
         <div className="project-visual-top">
           <span>PROJECT / {project.number}</span>
           <span>↗</span>
         </div>
 
-        {project.visual === "netflix" && (
-          <div className="netflix-art">
-            <span className="netflix-n">N</span>
-            <div>
-              <span className="art-kicker">YOUR NEXT WATCH</span>
-              <h3>
-                Stories
-                <br />
-                worth watching.
-              </h3>
-              <span className="art-pill">EXPLORE TITLES</span>
-            </div>
-          </div>
-        )}
-
-        {project.visual === "chatgpt" && (
-          <div className="chat-art">
-            <div className="chat-symbol">✳</div>
-            <span className="art-kicker">AI CONVERSATION</span>
-            <div className="chat-line long" />
-            <div className="chat-line short" />
-            <div className="chat-line medium" />
-          </div>
-        )}
-
-        {project.visual === "forum" && (
-          <div className="forum-art">
-            <div className="forum-icon">{"{ ? }"}</div>
-            <span className="art-kicker">ASK · SHARE · LEARN</span>
-            <div className="forum-row">
-              <i /> Community questions
-            </div>
-            <div className="forum-row">
-              <i /> Knowledge sharing
-            </div>
-            <div className="forum-row">
-              <i /> AI-powered retrieval
-            </div>
-          </div>
-        )}
+        <img
+          src={project.image}
+          alt={`${project.title} project screenshot`}
+          className="project-image"
+        />
       </div>
 
       <div className="project-info">
@@ -392,13 +370,17 @@ function Contact() {
           <span className="gradient-text">meaningful.</span>
         </h2>
         <p>
-          I'm interested in learning, collaborating, and exploring opportunities
-          to build useful digital products.
+          I'm open to junior developer opportunities, freelance projects, and
+          collaboration. If you're looking for someone passionate about building
+          useful web applications, I'd love to hear from you.
         </p>
 
         <div className="hero-actions contact-actions">
-          <a href="mailto:ahmed.dawud.dev@gmail.com">
-            ahmed.dawud.dev@gmail.com
+          <a
+            className="button button-primary"
+            href="mailto:ahmed.dawud.dev@gmail.com"
+          >
+            Email me <span>↗</span>
           </a>
           <a
             href="https://github.com/ahmeddawuddev-lab"
@@ -409,7 +391,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/ahmed-dawud-66a391377"
+            href="https://www.linkedin.com/in/ahmed-dawud-b6b542442/"
             target="_blank"
             rel="noreferrer"
           >
