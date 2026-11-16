@@ -103,6 +103,13 @@ function Hero() {
           <a className="button button-secondary" href="#contact">
             Get in touch
           </a>
+          <a
+            className="button button-secondary"
+            href="/Ahmed-Dawud-CV.pdf"
+            download
+          >
+            Download CV <span>↓</span>
+          </a>
         </div>
 
         <div className="hero-meta">
