@@ -6,8 +6,6 @@ A responsive personal portfolio website showcasing my skills, projects, and expe
 
  📸 Portfolio Preview
 
-![Portfolio Screenshot](public/images/portfolio-screenshot.png)
-
  🚀 About the Project
 
 This is my personal developer portfolio, built to present my technical skills, showcase projects, and provide an easy way for recruiters and potential clients to contact me.
